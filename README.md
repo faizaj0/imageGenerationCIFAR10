@@ -32,11 +32,16 @@ This project focuses on two main aspects:
 
 ## Results
 
-- The modified ResNet shows competitive performance on CIFAR-100 with reduced computational requirements. Upon com-
-pletion, it achieved a training accuracy of 65.5% ±2.6% and a test accuracy of 57.7% ±2.3%
+### Classifier Performance
+The modified ResNet shows competitive performance on CIFAR-100 with reduced computational requirements. Upon completion, it achieved:
+- **Training Accuracy**: 65.5% ± 2.6%
+- **Test Accuracy**: 57.7% ± 2.3%
+
 ![Classifier Results](classifier_results.png)
 
-- The adapted SN-GAN demonstrates stable and high-quality image generation capabilities. LPIPS metric yielded a score of 0.23
+### Generator Performance
+The adapted SN-GAN demonstrates stable and high-quality image generation capabilities. The results measured by the LPIPS (Learned Perceptual Image Patch Similarity) metric yielded a score of **0.23**.
+
 ![Generator Results](generator_results.png)
 
 ## Future Work
