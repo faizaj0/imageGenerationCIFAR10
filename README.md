@@ -1,6 +1,6 @@
 # Efficient CIFAR-100 Classification and Image Generation
 
-This project adapts the Residual Network (ResNet) architecture using depthwise separable convolutions for efficient CIFAR-100 classification. Additionally, it presents a modified conditional Spectral Normalization Generative Adversarial Network (SN-GAN) for image generation, also utilizing the CIFAR-100 dataset.
+This project adapts the Residual Network (ResNet) architecture with depthwise separable convolutions for efficient CIFAR-100 classification, achieving performance under 100,000 parameters and training in 10,000 steps. It also introduces a modified conditional Spectral Normalization GAN (SN-GAN) for image generation on CIFAR-100, optimized to run with less than 1,000,000 parameters.
 
 ## Key Features
 
@@ -32,8 +32,12 @@ This project focuses on two main aspects:
 
 ## Results
 
-- The modified ResNet shows competitive performance on CIFAR-100 with reduced computational requirements.
-- The adapted SN-GAN demonstrates stable and high-quality image generation capabilities.
+- The modified ResNet shows competitive performance on CIFAR-100 with reduced computational requirements. Upon com-
+pletion, it achieved a training accuracy of 65.5% ±2.6% and a test accuracy of 57.7% ±2.3%
+![Classifier Results](classifier_results.png)
+
+- The adapted SN-GAN demonstrates stable and high-quality image generation capabilities. LPIPS metric yielded a score of 0.23
+![Generator Results](generator_results.png)
 
 ## Future Work
 
